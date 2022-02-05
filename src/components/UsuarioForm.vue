@@ -22,7 +22,7 @@
     <input type="text" id="rua" name="rua" v-model="rua" />
 
     <label for="numero">Número:</label>
-    <input type="number" id="numero" name="numero" v-model="numero" />
+    <input type="text" id="numero" name="numero" v-model="numero" />
 
     <label for="bairro">Bairro:</label>
     <input type="text" id="bairro" name="bairro" v-model="bairro" />

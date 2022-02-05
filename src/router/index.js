@@ -25,7 +25,14 @@ const routes = [
   {
     path: "/usuario",
     name: "usuario",
-    component: Usuario
+    component: Usuario,
+    children: [
+      {
+        path: "/usuario/:id",
+        name: "usuario",
+        component: Usuario,
+      }
+    ],
   }
 ]
 

@@ -2,25 +2,27 @@
   <section class="login">
     <h1>Login</h1>
     <form>
-      <label for="email">Email:</label>
-      <input type="email" name="email" id="email" />
-      <label for="senha">Senha:</label>
-      <input type="password" name="senha" id="senha" />
-
+      <label for="email">Email</label>
+      <input type="email" name="email" id="email" v-model="login.email" />
+      <label for="senha">Senha</label>
+      <input type="password" name="senha" id="senha" v-model="login.senha" />
       <button class="btn" @click.prevent="logar">Logar</button>
     </form>
     <p class="perdeu">
-      <a href="/" target="_blank">Perdeu a senha? Clique aqui</a>
+      <a href="/" target="_blank">Perdeu a senha? Clique aqui.</a>
     </p>
-
     <LoginCriar />
   </section>
 </template>
 
 <script>
 import LoginCriar from "@/components/LoginCriar.vue";
+
 export default {
   name: "Login",
+  components: {
+    LoginCriar,
+  },
   data() {
     return {
       login: {
@@ -28,9 +30,6 @@ export default {
         senha: "",
       },
     };
-  },
-  components: {
-    LoginCriar,
   },
   methods: {
     logar() {
@@ -69,10 +68,6 @@ form {
 .perdeu {
   text-align: center;
   margin: 20px auto 0 auto;
-}
-
-.perdeu a {
-  transition: all 0.5s;
 }
 
 .perdeu a:hover {

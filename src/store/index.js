@@ -27,7 +27,7 @@ export default createStore({
   },
   actions: {
     getUsuario(context, payload) {
-      api.get(`/usuario/${payload}`).then(response => {
+      return api.get(`/usuario/${payload}`).then(response => {
         context.commit("UPDATE_USUARIO", response.data);
         context.commit("UPDATE_LOGIN", true);
       });
@@ -35,7 +35,7 @@ export default createStore({
 
     criarUsuario(context, payload) {
       context.commit("UPDATE_USUARIO", { id: payload.email });
-      api.post("/usuario", payload);
+      return api.post("/usuario", payload);
     }
 
   },

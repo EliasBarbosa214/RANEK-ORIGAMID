@@ -1,7 +1,7 @@
 <template>
   <section>
     <h2>Crie a Sua Conta</h2>
-    <transition mode="out-in">
+    <transition name="fade" mode="out-in">
       <button v-if="!criar" class="btn" @click="criar = true">
         Criar Conta
       </button>
@@ -27,9 +27,17 @@ export default {
     UsuarioForm,
   },
   methods: {
-    criarUsuario() {
-      console.log(this.$store);
-      this.$store.dispatch("criarUsuario", this.$store.state.usuario);
+    async criarUsuario() {
+      try {
+        await this.$store.dispatch("criarUsuario", this.$store.state.usuario);
+        await this.$store.dispatch(
+          "getUsuario",
+          this.$store.state.usuario.email
+        );
+        this.$router.push({ name: "usuario" });
+      } catch (error) {
+        console.log(error);
+      }
     },
   },
 };
@@ -51,5 +59,15 @@ h2 {
 
 .btn-form {
   max-width: 100%;
+}
+
+.fade-enter-from,
+.fade-leave-to {
+  opacity: 0;
+}
+
+.fade-enter-active,
+.fade-leave-active {
+  transition: opacity 0.5s ease;
 }
 </style>
