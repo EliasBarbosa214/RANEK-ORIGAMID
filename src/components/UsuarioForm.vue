@@ -10,7 +10,13 @@
     <input type="password" id="senha" name="senha" v-model="senha" />
 
     <label for="cep">CEP:</label>
-    <input type="number" id="cep" name="cep" v-model="cep" />
+    <input
+      type="text"
+      id="cep"
+      name="cep"
+      v-model="cep"
+      @keyup="preencherCep"
+    />
 
     <label for="rua">Rua:</label>
     <input type="text" id="rua" name="rua" v-model="rua" />
@@ -27,7 +33,7 @@
     <label for="estado">Estado:</label>
     <input type="text" id="estado" name="estado" v-model="estado" />
 
-    {{ this.$store.state.usuario }}
+    <!-- {{ this.$store.state.usuario }} -->
 
     <div class="button">
       <slot></slot>
@@ -37,6 +43,7 @@
 
 <script>
 /* import { mapFields } from "@/helpers.js"; */
+import { getCep } from "@/services.js";
 
 export default {
   computed: {
@@ -135,6 +142,21 @@ export default {
       set(value) {
         this.$store.commit("UPDATE_USUARIO", { estado: value });
       },
+    },
+  },
+
+  methods: {
+    preencherCep() {
+      const cep = this.cep.replace(/\D/g, "");
+      if (cep.length === 8) {
+        getCep(cep).then((r) => {
+          console.log(r);
+          this.rua = r.data.logradouro;
+          this.bairro = r.data.bairro;
+          this.estado = r.data.uf;
+          this.cidade = r.data.localidade;
+        });
+      }
     },
   },
 };

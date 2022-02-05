@@ -1,13 +1,13 @@
 <template>
-  <header class="header">
+  <header>
     <nav>
       <router-link to="/" class="logo">
         <img src="@/assets/ranek.svg" alt="Ranek" />
       </router-link>
-      <router-link v-if="this.$store.state.login" to="/usuario" class="btn">
-        {{ nome }}</router-link
-      >
-      <router-link v-else to="/login" class="btn">Vender / Login</router-link>
+      <router-link v-if="$store.state.login" class="btn" to="/usuario">{{
+        nome
+      }}</router-link>
+      <router-link v-else class="btn" to="/login">Vender / Login</router-link>
     </nav>
   </header>
 </template>
@@ -19,6 +19,13 @@ export default {
     nome() {
       return this.$store.state.usuario.nome.replace(/ .*/, "");
     },
+    // nome() {
+    //   console.log(this.$store);
+    //   return this.$store.dispatch(
+    //     "getUsuario",
+    //     this.$store.state.usuario.email
+    //   );
+    // },
   },
 };
 </script>

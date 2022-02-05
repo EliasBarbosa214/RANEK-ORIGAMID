@@ -7,27 +7,26 @@ import Usuario from '../views/usuario/Usuario.vue'
 
 const routes = [
   {
-    path: '/',
-    name: 'home',
+    path: "/",
+    name: "home",
     component: Home
   },
   {
-    path: '/produto/:id',
-    name: 'produto',
+    path: "/produto/:id",
+    name: "produto",
     component: Produto,
-    props: true,
-
+    props: true
   },
   {
-    path: '/login',
-    name: 'login',
-    component: Login,
+    path: "/login",
+    name: "login",
+    component: Login
   },
   {
-    path: '/usuario',
-    name: 'usuario',
-    component: Usuario,
-  },
+    path: "/usuario",
+    name: "usuario",
+    component: Usuario
+  }
 ]
 
 const router = createRouter({

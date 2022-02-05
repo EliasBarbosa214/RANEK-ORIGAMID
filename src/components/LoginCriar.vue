@@ -6,7 +6,9 @@
         Criar Conta
       </button>
       <UsuarioForm v-else>
-        <button class="btn btn-form">Criar Usuário</button>
+        <button class="btn btn-form" @click.prevent="criarUsuario">
+          Criar Usuário
+        </button>
       </UsuarioForm>
     </transition>
   </section>
@@ -23,6 +25,12 @@ export default {
   },
   components: {
     UsuarioForm,
+  },
+  methods: {
+    criarUsuario() {
+      console.log(this.$store);
+      this.$store.dispatch("criarUsuario", this.$store.state.usuario);
+    },
   },
 };
 </script>

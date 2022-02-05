@@ -21,6 +21,69 @@
       "numero": "25",
       "estado": "RJ",
       "cidade": "Rio De Janeiro"
+    },
+    {
+      "id": "maria@origamid.com",
+      "nome": "Maria das NEves",
+      "email": "maria@origamid.com",
+      "senha": "123",
+      "cep": "26535-240",
+      "rua": "Rua José Tertuliano de Almeida",
+      "numero": 1233,
+      "bairro": "Centro",
+      "cidade": "Nilópolis",
+      "estado": "RJ"
+    },
+    {
+      "id": "TestandoConta@gmail.com",
+      "nome": "TestandoConta",
+      "email": "TestandoConta@gmail.com",
+      "senha": "123",
+      "cep": "26535-240",
+      "rua": "Rua José Tertuliano de Almeida",
+      "numero": 430,
+      "bairro": "Centro",
+      "cidade": "Nilópolis",
+      "estado": "RJ"
+    },
+    {
+      "id": "elias@teste.com",
+      "nome": "Elias Barbosa de Sousa",
+      "email": "elias@teste.com",
+      "senha": "123",
+      "cep": "26535-240",
+      "rua": "Rua José Tertuliano de Almeida",
+      "numero": 1,
+      "bairro": "Centro",
+      "cidade": "Nilópolis",
+      "estado": "RJ"
+    },
+    {
+      "id": "anabeatriz@gmail.com",
+      "nome": "Ana Beatriz Barbosa de Sousa",
+      "email": "anabeatriz@gmail.com",
+      "senha": "123",
+      "cep": "26535-240",
+      "rua": "Rua José Tertuliano de Almeida",
+      "numero": 123,
+      "bairro": "Centro",
+      "cidade": "Nilópolis",
+      "estado": "RJ"
+    },
+    {
+      "id": "9c2Nofr"
+    },
+    {
+      "id": "tete@gmail.com",
+      "nome": "Testete",
+      "email": "tete@gmail.com",
+      "senha": "1",
+      "cep": "26535-240",
+      "rua": "Rua José Tertuliano de Almeida",
+      "numero": 13,
+      "bairro": "Centro",
+      "cidade": "Nilópolis",
+      "estado": "RJ"
     }
   ],
   "produto": [
@@ -764,18 +827,3 @@
     }
   ]
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
