@@ -32,8 +32,6 @@ export default {
 
 body {
   font-family: "Poppins", Avenir, Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
   color: #345;
   background: url("./assets/pattern.svg") repeat top;
   background-color: #f1f1f1;

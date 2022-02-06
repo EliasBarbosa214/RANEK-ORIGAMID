@@ -3,6 +3,10 @@ import Home from '../views/Home.vue'
 import Produto from '../views/Produto.vue'
 import Login from '../views/Login.vue'
 import Usuario from '../views/usuario/Usuario.vue'
+import UsuarioProdutos from '../views/usuario/UsuarioProdutos.vue'
+import UsuarioVendas from '../views/usuario/UsuarioVendas.vue'
+import UsuarioCompras from '../views/usuario/UsuarioCompras.vue'
+import UsuarioEditar from '../views/usuario/UsuarioEditar.vue'
 
 
 const routes = [
@@ -24,13 +28,27 @@ const routes = [
   },
   {
     path: "/usuario",
-    name: "usuario",
     component: Usuario,
     children: [
       {
-        path: "/usuario/:id",
+        path: "",
         name: "usuario",
-        component: Usuario,
+        component: UsuarioProdutos,
+      },
+      {
+        path: "vendas",
+        name: "vendas",
+        component: UsuarioVendas,
+      },
+      {
+        path: "compras",
+        name: "compras",
+        component: UsuarioCompras,
+      },
+      {
+        path: "editar",
+        name: "usuario-editar",
+        component: UsuarioEditar,
       }
     ],
   }

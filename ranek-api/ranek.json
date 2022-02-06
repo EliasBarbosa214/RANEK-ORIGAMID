@@ -45,6 +45,18 @@
       "bairro": "Centro",
       "cidade": "Nilópolis",
       "estado": "RJ"
+    },
+    {
+      "id": "elias@teste.com",
+      "nome": "Elias Barbosa de Sousa",
+      "email": "elias@teste.com",
+      "senha": "1",
+      "cep": "26535-240",
+      "rua": "Rua José Tertuliano de Almeida",
+      "numero": "777",
+      "bairro": "Centro",
+      "cidade": "Nilópolis",
+      "estado": "RJ"
     }
   ],
   "produto": [
