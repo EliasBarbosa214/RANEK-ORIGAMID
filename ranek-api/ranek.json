@@ -24,12 +24,12 @@
     },
     {
       "id": "maria@origamid.com",
-      "nome": "Maria das NEves",
+      "nome": "Maria das Neves Bezerra da Cunha",
       "email": "maria@origamid.com",
       "senha": "123",
       "cep": "26535-240",
       "rua": "Rua José Tertuliano de Almeida",
-      "numero": 13,
+      "numero": "13",
       "bairro": "Centro",
       "cidade": "Nilópolis",
       "estado": "RJ"
@@ -41,7 +41,7 @@
       "senha": "1",
       "cep": "26535-240",
       "rua": "Rua José Tertuliano de Almeida",
-      "numero": 111,
+      "numero": "111",
       "bairro": "Centro",
       "cidade": "Nilópolis",
       "estado": "RJ"
@@ -821,30 +821,6 @@
       "fotos": null,
       "usuario_id": "maria@origamid.com",
       "id": "nJITdkY"
-    },
-    {
-      "preco": 199.99,
-      "nome": "Camêra",
-      "descricao": "Uma Camêra.",
-      "fotos": null,
-      "usuario_id": "maria@origamid.com",
-      "id": "w-Ur6WU"
-    },
-    {
-      "preco": 199.99,
-      "nome": "Camêra",
-      "descricao": "Uma Camêra.",
-      "fotos": null,
-      "usuario_id": "maria@origamid.com",
-      "id": "fSmMHUh"
-    },
-    {
-      "preco": 199.99,
-      "nome": "Camêra",
-      "descricao": "Uma Camêra.",
-      "fotos": null,
-      "usuario_id": "maria@origamid.com",
-      "id": "sAUm0wh"
     }
   ]
 }
