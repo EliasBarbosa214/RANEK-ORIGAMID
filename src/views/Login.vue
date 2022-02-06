@@ -3,15 +3,29 @@
     <h1>Login</h1>
     <form>
       <label for="email">Email</label>
-      <input type="email" name="email" id="email" v-model="login.email" />
+      <input
+        type="email"
+        name="email"
+        id="email"
+        v-model="login.email"
+        required
+      />
       <label for="senha">Senha</label>
-      <input type="password" name="senha" id="senha" v-model="login.senha" />
+      <input
+        type="password"
+        name="senha"
+        id="senha"
+        v-model="login.senha"
+        required
+      />
       <button class="btn" @click.prevent="logar">Logar</button>
     </form>
     <p class="perdeu">
       <a href="/" target="_blank">Perdeu a senha? Clique aqui.</a>
     </p>
-    <LoginCriar />
+    <transition name="fade" mode="out-in">
+      <LoginCriar />
+    </transition>
   </section>
 </template>
 
@@ -73,5 +87,15 @@ form {
 .perdeu a:hover {
   color: #87f;
   text-decoration: underline;
+}
+
+.fade-enter,
+.fade-leave {
+  opacity: 0;
+}
+
+.fade-enter-active,
+.fade-leave-active {
+  transition: all 0.3s ease-in;
 }
 </style>

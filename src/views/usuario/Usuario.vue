@@ -34,20 +34,47 @@ export default {
 };
 </script>
 
-<style>
-li {
-  display: inline-block;
+<style scoped>
+.usuario {
+  display: grid;
+  grid-template-columns: minmax(140px, 200px) 1fr;
+  max-width: 900px;
+  margin: 40px auto;
+  grid-gap: 30px;
+  padding: 20px;
 }
 
-li a {
-  padding: 2px 8px;
-  border-radius: 2px;
-  margin: 4px;
+@media screen and (max-width: 500px) {
+  .usuario {
+    grid-template-columns: 1fr;
+    margin: 0px auto;
+  }
+}
+
+.sidenav a,
+.sidenav button {
+  padding: 10px;
+  display: block;
+  background: #f9f9f9;
+  margin-bottom: 10px;
+  border-radius: 4px;
   transition: all 0.3s;
 }
 
-li a:hover {
-  color: white;
+.sidenav a.router-link-exact-active,
+.sidenav a:hover,
+.sidenav button:hover {
   background: #87f;
+  color: white;
+}
+
+.sidenav button {
+  border: none;
+  width: 100%;
+  font-size: 1rem;
+  text-align: left;
+  cursor: pointer;
+  font-family: "Poppins", Avenir, Helvetica, Arial, sans-serif;
+  color: #345;
 }
 </style>
