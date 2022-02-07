@@ -1,15 +1,62 @@
 {
+  "transacao": [
+    {
+      "comprador_id": "maria@origamid.com",
+      "vendedor_id": "elias@origamid.com",
+      "produto": {
+        "id": "notebook3",
+        "nome": "Notebook",
+        "usuario_id": "elias@origamid.com",
+        "preco": "2600",
+        "vendido": "false",
+        "descricao": "Esse é um novo notebook.",
+        "fotos": null
+      },
+      "endereco": {
+        "cep": "26535-240",
+        "rua": "Rua José Tertuliano de Almeida",
+        "numero": "13",
+        "bairro": "Centro",
+        "cidade": "Nilópolis",
+        "estado": "RJ"
+      },
+      "id": 1
+    },
+    {
+      "comprador_id": "eliasteste@gmail.com",
+      "vendedor_id": "elias@origamid.com",
+      "produto": {
+        "id": "notebook3",
+        "nome": "Notebook",
+        "usuario_id": "elias@origamid.com",
+        "preco": "2600",
+        "vendido": "false",
+        "descricao": "Esse é um novo notebook.",
+        "fotos": null
+      },
+      "endereco": {
+        "cep": "26535-240",
+        "rua": "Rua José Tertuliano de Almeida",
+        "numero": "1112",
+        "bairro": "Centro",
+        "cidade": "Nilópolis",
+        "estado": "RJ"
+      },
+      "id": 2
+    }
+  ],
   "usuario": [
     {
       "id": "elias@origamid.com",
-      "email": "elias@origamid.com",
       "nome": "Elias Barbosa de Sousa",
+      "email": "elias@origamid.com",
       "senha": "123",
-      "rua": "Rua do Carinho que mora logo ali",
       "cep": "12345678",
+      "rua": "Rua do Carinho que mora logo ali",
       "numero": "25",
-      "estado": "RJ",
-      "cidade": "Rio De Janeiro"
+      "bairro": "Esquina",
+      "cidade": "Rio De Janeiro",
+      "estado": "RJ"
     },
     {
       "id": "joao@origamid.com",
@@ -57,6 +104,18 @@
       "bairro": "Centro",
       "cidade": "Nilópolis",
       "estado": "RJ"
+    },
+    {
+      "id": "eliasteste@gmail.com",
+      "nome": "Elias Teste",
+      "email": "eliasteste@gmail.com",
+      "senha": "1",
+      "cep": "26535-240",
+      "rua": "Rua José Tertuliano de Almeida",
+      "numero": "1112",
+      "bairro": "Centro",
+      "cidade": "Nilópolis",
+      "estado": "RJ"
     }
   ],
   "produto": [
@@ -76,15 +135,6 @@
       "preco": "1500",
       "vendido": "false",
       "descricao": "Esse é um novo tablet.",
-      "fotos": null
-    },
-    {
-      "id": "smartphone3",
-      "nome": "smartphone",
-      "usuario_id": "elias@origamid.com",
-      "preco": "4999",
-      "vendido": "false",
-      "descricao": "Esse é um novo smartphone da Apple de Papelão.",
       "fotos": null
     },
     {
@@ -133,42 +183,6 @@
       "fotos": null
     },
     {
-      "id": "smartphone5",
-      "nome": "smartphone",
-      "usuario_id": "elias@origamid.com",
-      "preco": "4999",
-      "vendido": "false",
-      "descricao": "Esse é um novo smartphone da Apple de Papelão.",
-      "fotos": null
-    },
-    {
-      "id": "notebook6",
-      "nome": "Notebook",
-      "usuario_id": "elias@origamid.com",
-      "preco": "2600",
-      "vendido": "false",
-      "descricao": "Esse é um novo notebook.",
-      "fotos": null
-    },
-    {
-      "id": "tablet6",
-      "nome": "Tablet",
-      "usuario_id": "elias@origamid.com",
-      "preco": "1500",
-      "vendido": "false",
-      "descricao": "Esse é um novo tablet.",
-      "fotos": null
-    },
-    {
-      "id": "smartphone6",
-      "nome": "smartphone",
-      "usuario_id": "elias@origamid.com",
-      "preco": "4999",
-      "vendido": "false",
-      "descricao": "Esse é um novo smartphone da Apple de Papelão.",
-      "fotos": null
-    },
-    {
       "id": "notebook7",
       "nome": "Notebook",
       "usuario_id": "elias@origamid.com",
@@ -187,15 +201,6 @@
       "fotos": null
     },
     {
-      "id": "smartphone7",
-      "nome": "smartphone",
-      "usuario_id": "elias@origamid.com",
-      "preco": "4999",
-      "vendido": "false",
-      "descricao": "Esse é um novo smartphone da Apple de Papelão.",
-      "fotos": null
-    },
-    {
       "id": "notebook8",
       "nome": "Notebook",
       "usuario_id": "elias@origamid.com",
@@ -211,15 +216,6 @@
       "preco": "1500",
       "vendido": "false",
       "descricao": "Esse é um novo tablet.",
-      "fotos": null
-    },
-    {
-      "id": "smartphone8",
-      "nome": "smartphone",
-      "usuario_id": "elias@origamid.com",
-      "preco": "4999",
-      "vendido": "false",
-      "descricao": "Esse é um novo smartphone da Apple de Papelão.",
       "fotos": null
     },
     {
@@ -331,24 +327,6 @@
       "fotos": null
     },
     {
-      "id": "notebook6",
-      "nome": "Notebook",
-      "usuario_id": "elias@origamid.com",
-      "preco": "2600",
-      "vendido": "false",
-      "descricao": "Esse é um novo notebook.",
-      "fotos": null
-    },
-    {
-      "id": "tablet6",
-      "nome": "Tablet",
-      "usuario_id": "elias@origamid.com",
-      "preco": "1500",
-      "vendido": "false",
-      "descricao": "Esse é um novo tablet.",
-      "fotos": null
-    },
-    {
       "id": "smartphone6",
       "nome": "smartphone",
       "usuario_id": "elias@origamid.com",
@@ -508,15 +486,6 @@
       "preco": "4999",
       "vendido": "false",
       "descricao": "Esse é um novo smartphone da Apple de Papelão.",
-      "fotos": null
-    },
-    {
-      "id": "notebook6",
-      "nome": "Notebook",
-      "usuario_id": "elias@origamid.com",
-      "preco": "2600",
-      "vendido": "false",
-      "descricao": "Esse é um novo notebook.",
       "fotos": null
     },
     {
@@ -821,6 +790,24 @@
       "fotos": null,
       "usuario_id": "maria@origamid.com",
       "id": "nJITdkY"
+    },
+    {
+      "preco": 1999.99,
+      "nome": "Lápis (Lenovo)",
+      "descricao": "Lápis da Lenovo.",
+      "fotos": null,
+      "vendido": "false",
+      "usuario_id": "maria@origamid.com",
+      "id": "s6N1anP"
+    },
+    {
+      "preco": 1.99,
+      "nome": "Caneta BIC",
+      "descricao": "É uma caneta.",
+      "fotos": null,
+      "vendido": "false",
+      "usuario_id": "elias@origamid.com",
+      "id": "zQXdVLA"
     }
   ]
 }

@@ -2,11 +2,9 @@
   <div id="app">
     <Header />
     <main id="main">
-      <router-view v-slot="{ Component }" mode="out-in">
-        <transition>
-          <component :is="Component" />
-        </transition>
-      </router-view>
+      <transition name="bounce" mode="out-in">
+        <router-view></router-view>
+      </transition>
     </main>
     <Footer />
   </div>
@@ -113,5 +111,23 @@ input:focus {
   outline: none;
   box-shadow: 0 6px 12px rgba(30, 60, 90, 0.2);
   border-color: #87f;
+}
+
+.bounce-enter-active {
+  animation: bounce-in 1s;
+}
+.bounce-leave-active {
+  animation: bounce-in 1s reverse;
+}
+@keyframes bounce-in {
+  0% {
+    transform: scale(0);
+  }
+  50% {
+    transform: scale(1.1);
+  }
+  100% {
+    transform: scale(1);
+  }
 }
 </style>

@@ -33,6 +33,7 @@ export default {
         nome: "",
         descricao: "",
         fotos: null,
+        vendido: "false",
       },
     };
   },

@@ -1,13 +1,15 @@
 <template>
   <form action="">
-    <label for="nome">Nome:</label>
-    <input type="text" id="nome" name="nome" v-model="nome" />
+    <div class="usuario" v-if="mostrarDadosLogin">
+      <label for="nome">Nome:</label>
+      <input type="text" id="nome" name="nome" v-model="nome" />
 
-    <label for="email">Email:</label>
-    <input type="email" id="email" name="email" v-model="email" />
+      <label for="email">Email:</label>
+      <input type="email" id="email" name="email" v-model="email" />
 
-    <label for="senha">Senha:</label>
-    <input type="password" id="senha" name="senha" v-model="senha" />
+      <label for="senha">Senha:</label>
+      <input type="password" id="senha" name="senha" v-model="senha" />
+    </div>
 
     <label for="cep">CEP:</label>
     <input
@@ -47,6 +49,9 @@ import { getCep } from "@/services.js";
 
 export default {
   computed: {
+    mostrarDadosLogin() {
+      return !this.$store.state.login || this.$route.name === "usuario-editar";
+    },
     /* ...mapFields({
       fields: [
         "nome",
@@ -163,10 +168,15 @@ export default {
 </script>
 
 <style scoped>
+.usuario,
 form {
   display: grid;
   grid-template-columns: 80px 1fr;
   align-items: center;
+}
+
+.usuario {
+  grid-column: 1 / 3;
 }
 
 .button {
