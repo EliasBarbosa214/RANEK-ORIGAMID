@@ -43,6 +43,94 @@
         "estado": "RJ"
       },
       "id": 2
+    },
+    {
+      "comprador_id": "eliasteste@gmail.com",
+      "vendedor_id": "elias@origamid.com",
+      "produto": {
+        "id": "tablet3",
+        "nome": "Tablet",
+        "usuario_id": "elias@origamid.com",
+        "preco": "1500",
+        "vendido": "false",
+        "descricao": "Esse é um novo tablet.",
+        "fotos": null
+      },
+      "endereco": {
+        "cep": "26535-240",
+        "rua": "Rua José Tertuliano de Almeida",
+        "numero": "1112",
+        "bairro": "Centro",
+        "cidade": "Nilópolis",
+        "estado": "RJ"
+      },
+      "id": 3
+    },
+    {
+      "comprador_id": "maria@origamid.com",
+      "vendedor_id": "elias@origamid.com",
+      "produto": {
+        "id": "notebook8",
+        "nome": "Notebook",
+        "usuario_id": "elias@origamid.com",
+        "preco": "2600",
+        "vendido": "false",
+        "descricao": "Esse é um novo notebook.",
+        "fotos": null
+      },
+      "endereco": {
+        "cep": "26535-240",
+        "rua": "Rua José Tertuliano de Almeida",
+        "numero": "13",
+        "bairro": "Centro",
+        "cidade": "Nilópolis",
+        "estado": "RJ"
+      },
+      "id": 4
+    },
+    {
+      "comprador_id": "maria@origamid.com",
+      "vendedor_id": "elias@origamid.com",
+      "produto": {
+        "preco": 1.99,
+        "nome": "Caneta BIC",
+        "descricao": "É uma caneta.",
+        "fotos": null,
+        "vendido": "false",
+        "usuario_id": "elias@origamid.com",
+        "id": "zQXdVLA"
+      },
+      "endereco": {
+        "cep": "26535-240",
+        "rua": "Rua José Tertuliano de Almeida",
+        "numero": "13",
+        "bairro": "Centro",
+        "cidade": "Nilópolis",
+        "estado": "RJ"
+      },
+      "id": 5
+    },
+    {
+      "comprador_id": "maria@origamid.com",
+      "vendedor_id": "elias@origamid.com",
+      "produto": {
+        "id": "tablet8",
+        "nome": "Tablet",
+        "usuario_id": "elias@origamid.com",
+        "preco": "1500",
+        "vendido": "false",
+        "descricao": "Esse é um novo tablet.",
+        "fotos": null
+      },
+      "endereco": {
+        "cep": "26535-240",
+        "rua": "Rua José Tertuliano de Almeida",
+        "numero": "13",
+        "bairro": "Centro",
+        "cidade": "Nilópolis",
+        "estado": "RJ"
+      },
+      "id": 6
     }
   ],
   "usuario": [
@@ -808,6 +896,15 @@
       "vendido": "false",
       "usuario_id": "elias@origamid.com",
       "id": "zQXdVLA"
+    },
+    {
+      "preco": 199.99,
+      "nome": "Blusa Cobra Kai",
+      "descricao": "Casaco do Cobra Kai, mas só quem odeio o Daniel do Miyago Do pode Comprar.",
+      "fotos": null,
+      "vendido": "false",
+      "usuario_id": "maria@origamid.com",
+      "id": "BZvHdgQ"
     }
   ]
 }
